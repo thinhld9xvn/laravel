@@ -1,0 +1,28 @@
+s = 'c' : key tìm kiếm
+results = []
+
+Nội thất nhà ở chung cư (A)
+    -- Tủ bếp (B)
+        -- Thi công nội thất chung cư (E)
+    -- Decor trung cư  (C)
+    -- Thiết kế nội thất chung cư  (D)
+
+- Duyệt (A), (A) có chứa (s) => results.push(A) (bỏ childrens nếu có) => [
+    Nội thất nhà ở chung cư
+]
+- Duyệt (B), (B) không chứa (s) => bỏ qua
+- Duyệt (E), (E) chứa (s) => (E) là con của (B) => E' = [
+    Tủ bếp
+        -- Thi công nội thất chung cư
+] (1)
+    + Xét tương tự (1) với (B) cho đến khi node cấp cha cao nhất nằm trong results thì ngưng
+    + Như vậy cấu trúc của E' tổng quát sẽ có dạng : E' = [
+        P
+            --- P1
+                    -- P2
+                        ....
+                            -- Tủ bếp
+                                -- Thi công nội thất chung cư
+    ]
+    + results->(A)->extras->childrens->E'
+- Làm tương tự với các node còn lại cho đến hết

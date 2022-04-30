@@ -1,0 +1,1 @@
+export const TINYMCE_API = process.env.TINYMCE_API

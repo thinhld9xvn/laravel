@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Máy tính",
+        "value": 1,
+        "extras": {
+            "id": 1,
+            "name": "Máy tính",
+            "url": "may-tinh",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis, eros nec ultricies semper, metus neque maximus sem, ac pretium nulla neque nec dui.",
+            "parent": "0",
+            "thumbnail": "http://127.0.0.1:8000/storage/uploads//imagazine-demo-150x150.png"
+        },
+        "selected": false,
+        "childrens": [
+            {
+                "name": "Phần cứng",
+                "value": 2,
+                "extras": {
+                    "id": 2,
+                    "name": "Phần cứng",
+                    "url": "phan-cung",
+                    "description": "",
+                    "parent": 1,
+                    "thumbnail": ""
+                },
+                "selected": false,
+                "childrens": [
+                    {
+                        "name": "Chuột",
+                        "value": 4,
+                        "extras": {
+                            "id": 4,
+                            "name": "Chuột",
+                            "url": "chuot",
+                            "description": "",
+                            "parent": 2,
+                            "thumbnail": ""
+                        },
+                        "selected": false
+                    },
+                    {
+                        "name": "Bàn phím",
+                        "value": 5,
+                        "extras": {
+                            "id": 5,
+                            "name": "Bàn phím",
+                            "url": "ban-phim",
+                            "description": "",
+                            "parent": 2,
+                            "thumbnail": ""
+                        },
+                        "selected": false
+                    }
+                ]
+            },
+            {
+                "name": "Phần mềm",
+                "value": 3,
+                "extras": {
+                    "id": 3,
+                    "name": "Phần mềm",
+                    "url": "phan-mem",
+                    "description": "",
+                    "parent": 1,
+                    "thumbnail": ""
+                },
+                "selected": false,
+                "childrens": [
+                    {
+                        "name": "Phần mềm diệt virus",
+                        "value": 6,
+                        "extras": {
+                            "id": 6,
+                            "name": "Phần mềm diệt virus",
+                            "url": "phan-mem-diet-virus",
+                            "description": "",
+                            "parent": 3,
+                            "thumbnail": ""
+                        },
+                        "selected": true
+                    }
+                ]
+            }
+        ]
+    }
+]

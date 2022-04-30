@@ -1,0 +1,40 @@
+Mô tả yêu cầu khi tạo một post type :
+    - Post type có thể có nhiều loại danh mục (taxonomy) khác nhau
+    - Slug post type không được trùng nhau
+    - Post type sẽ có ô chọn template ( sản phẩm, đơn hàng, ... ) (một post type chỉ chọn đc một template)
+    - Post type phải có trường nhập cho các label "Tất cả bài viết", label "Bài viết mới",
+                                            label "Danh mục bài viết"
+    
+Cấu trúc dữ liệu option post types đã tạo :
+    + option_name(string) : "post_types_option"
+    + option_value(array json) : [
+        {
+            id(string) : "...",
+            slug(string) : "...",
+            name(string) : "...",
+            label : "...",
+            all_posts_label(string) : "...",
+            new_post_label(string) : "...",
+            post_name_label(string) : "...",
+            publish_post_label(string) : "...",
+            description(string) : "...",
+            taxonomies(array) : [ // mảng lưu trữ các taxonomy hiện hành của post type 
+                {
+                    id(string) : "...",
+                    slug(string) : "...",
+                    label(string) : "..."
+                },
+                ...
+            ],
+            template : { // template của post type nếu có ngược lại là null
+                id(string) : "...",
+                name(string) : "...",                
+            }
+        }
+    ]
+Cấu trúc bảng một post type khi được tạo mới :
+    - {slug}_posts : bảng lưu trữ bài viết của post type (giống như bảng posts)
+    - {slug}_taxonomies : bảng lưu trữ taxonomy của post type (giống như bảng categories, 
+                                                                thêm cột tax_slug để phân biệt thuộc taxonomy nào)
+    - {slug}_metastrings : bảng lưu trữ các dữ liệu meta của post type (giống như bảng metastrings)
+    - Còn metadata của post type thì lưu vào bảng metadata

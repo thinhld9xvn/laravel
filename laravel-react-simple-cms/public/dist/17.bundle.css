@@ -1,0 +1,39 @@
+.modalConfiguration > div {
+  max-width: 80% !important;
+}
+
+.description {
+  font-size: 13px;
+  color: #3C4858;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.tax-entry {
+  position: relative;
+  border: 1px solid #ddd;
+}
+.tax-entry:not(:first-child) {
+  margin-top: 10px;
+}
+.tax-entry .remove {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.tax-entry .tax-wrap {
+  padding: 10px;
+}
+.tax-entry .tax-heading {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-left: 10px;
+  background: linear-gradient(to bottom, #fff 0, #ccc 100%);
+  font-size: 15px;
+  color: #2b7dbc;
+  font-weight: bold;
+  cursor: move;
+}
+.modalConfiguration>div{max-width:80% !important}.description{font-size:13px;color:#3C4858;font-weight:normal;font-style:italic}
+
