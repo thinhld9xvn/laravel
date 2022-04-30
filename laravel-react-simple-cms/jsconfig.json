@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "checkJs": true,
+        "baseUrl": ".",
+        "sourceMap": true,
+         "noImplicitAny": false,
+         "module": "commonjs",
+         "target": "es5",
+         "allowJs": true,
+         "moduleResolution": "node",
+        "paths": {
+            "css/*" : ["public/frontend/css/*"],
+            "images/*" : ["public/frontend/images/*"],
+            "constants/*" : ["public/frontend/js/admin/constants/*"],
+            "hooks/*" : ["public/frontend/js/admin/hooks/*"],
+            "components/*" : ["public/frontend/js/admin/components/*"],
+            "libraries/*" : ["public/frontend/js/admin/libraries/*"],
+            "utils/*" : ["public/frontend/js/admin/utils/*"],
+            "modules/*" : ["public/frontend/js/admin/modules/*"],
+            "sample/*" : ["public/frontend/js/admin/sample/*"],
+            "handleEvents/*" : ["public/frontend/js/admin/handleEvents/*"],
+            "handleValidate/*" : ["public/frontend/js/admin/handleValidate/*"],
+            "templates/*" : ["public/frontend/js/admin/templates/*"]
+         }
+    },
+    "exclude": ["node_modules"]
+}
